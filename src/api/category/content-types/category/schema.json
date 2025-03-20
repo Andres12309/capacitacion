@@ -23,6 +23,12 @@
       "type": "uid",
       "required": true,
       "private": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category"
     }
   }
 }
